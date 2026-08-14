@@ -112,11 +112,7 @@ const getGPSLocation = () => {
 // ==========================================
 const BottomNav = {
   template: `
-    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around items-center h-16 z-50 shadow-lg px-2">
-      <router-link to="/home" class="flex flex-col items-center flex-1 py-1 text-gray-500 transition-colors" active-class="text-blue-600 font-semibold">
-        <i data-lucide="home" class="w-5 h-5"></i>
-        <span class="text-[11px] mt-1">Home</span>
-      </router-link>
+    <nav class="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 flex justify-around items-center h-16 z-50 shadow-lg px-4">
       <router-link to="/history" class="flex flex-col items-center flex-1 py-1 text-gray-500 transition-colors" active-class="text-blue-600 font-semibold">
         <i data-lucide="history" class="w-5 h-5"></i>
         <span class="text-[11px] mt-1">History</span>
