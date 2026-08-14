@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include ce_hub *.css
+recursive-include ce_hub *.csv
+recursive-include ce_hub *.html
+recursive-include ce_hub *.ico
+recursive-include ce_hub *.js
+recursive-include ce_hub *.json
+recursive-include ce_hub *.md
+recursive-include ce_hub *.png
+recursive-include ce_hub *.py
+recursive-include ce_hub *.svg
+recursive-include ce_hub *.txt
+recursive-exclude ce_hub *.pyc
