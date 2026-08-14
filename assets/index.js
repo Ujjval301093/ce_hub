@@ -97,12 +97,12 @@ const getGPSLocation = () => {
         (pos) => resolve({ lat: pos.coords.latitude, lng: pos.coords.longitude }),
         (err) => {
           console.warn('Geolocation fallback:', err.message);
-          resolve({ lat: 31.1048, lng: 77.1734 }); // Head office default
+          resolve({ lat: 31.0938, lng: 77.2072, dist: 10 }); // Head office default
         },
         { enableHighAccuracy: true, timeout: 8000, maximumAge: 0 }
       );
     } else {
-      resolve({ lat: 31.1048, lng: 77.1734 });
+      resolve({ lat: 31.0938, lng: 77.2072, dist: 10 });
     }
   });
 };
