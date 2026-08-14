@@ -7,7 +7,7 @@ const { createRouter, createWebHashHistory, useRouter, useRoute } = VueRouter;
 const API = {
   async call(method, args = {}) {
     try {
-      const response = await fetch(`${window.ERP_BASE_URL || ''}/api/method/ce_hub.api.${method}`, {
+      const response = await fetch(`/api/method/ce_hub.api.${method}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ const API = {
   },
 
   async login(usr, pwd) {
-    const res = await fetch(`${window.ERP_BASE_URL || ''}/api/method/login`, {
+    const res = await fetch(`/api/method/login`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       credentials: 'include',
@@ -46,7 +46,7 @@ const API = {
   },
 
   async logout() {
-    await fetch(`${window.ERP_BASE_URL || ''}/api/method/logout`, { method: 'POST', credentials: 'include' });
+    await fetch(`/api/method/logout`, { method: 'POST', credentials: 'include' });
     window.location.href = '/ce-hub#/';
     window.location.reload();
   },
